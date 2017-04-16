@@ -16,11 +16,11 @@ printf "\nChecking docker status\n"
 service docker status
 
 # Install Java JDK
-sudo apt-get install oracle-java8-installer
-java -version
+# sudo apt-get -y install default-jdk
+# java -version
 
 # Install maven
-sudo apt-get install maven
+sudo apt-get -y install maven
 mvn -version
 
 #Provision docker hub and nodes
