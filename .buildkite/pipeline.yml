@@ -1,4 +1,9 @@
 steps:
   - label: Example Test
     command: echo "Hello!"
-    command: ./install.sh 
+    command: "./install.sh"
+
+  - wait
+
+  - name:  "Echo sample"
+    command : echo "Done..."" 
