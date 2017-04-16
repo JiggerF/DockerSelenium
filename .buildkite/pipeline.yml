@@ -1,8 +1,13 @@
 steps:
-  - label: Install docker
+  - label: Install tools
     command: "scripts/install.sh"
 
   - wait
 
-  - name:  "Echo sample"
+  - label: Run Selenium Tests
+    command: "scripts/run-test.sh"
+
+  - wait
+
+  - name:  "Closing..."
     command : echo "Done..."" 

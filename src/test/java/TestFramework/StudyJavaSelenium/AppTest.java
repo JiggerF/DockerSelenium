@@ -41,5 +41,6 @@ public class AppTest extends TestCase
     			System.out.println(e.getMessage());
     		}
      	driver.quit();  
+     	System.out.println("Ending test....");
      }
 }
