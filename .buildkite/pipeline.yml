@@ -1,6 +1,6 @@
 steps:
-  - label: Install tools
-    command: "scripts/install.sh"
+  #- label: Install tools
+  #  command: "scripts/install.sh"
 
   - wait
 
