@@ -5,12 +5,12 @@ printf "\nChecking if docker installed\n"
     which docker
 } || {
     printf "\nDocker not present - installing docker\n"
-    sudo curl -sSL https://get.docker.com/ | sh
+    curl -sSL https://get.docker.com/ | sh
     printf "\n Docker version:\n"
     docker version
 }
  
-sudo usermod -aG docker $(whoami)
+usermod -aG docker $(whoami)
  
 printf "\nChecking docker status\n"
-sudo service docker status
+service docker status
